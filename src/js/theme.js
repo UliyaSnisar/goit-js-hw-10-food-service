@@ -8,6 +8,8 @@ const Theme = {
   DARK: 'dark-theme',
 };
 
+refs.body.classList.add(Theme.LIGHT);
+
 function handleCheckboxChange() {
   if (refs.body.className === '') {
     refs.body.classList.add(Theme.DARK);
