@@ -11,9 +11,10 @@ const Theme = {
 refs.body.classList.add(Theme.LIGHT);
 
 function handleCheckboxChange() {
-  if (refs.body.className === '') {
+  if (refs.body.className === Theme.LIGHT) {
+    refs.body.classList.remove(Theme.LIGHT);
     refs.body.classList.add(Theme.DARK);
-  } else {
+      } else {
     refs.body.classList.toggle(Theme.LIGHT);
     refs.body.classList.toggle(Theme.DARK);
   }
